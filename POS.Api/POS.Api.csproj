@@ -7,7 +7,22 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+    <PackageReference Include="Vxp.BiFrost.WeatherForecast" Version="2020.10.29.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\POS.Application\POS.Application.csproj" />
+    <ProjectReference Include="..\POS.Infrastructure\POS.Infrastructure.csproj" />
+    <ProjectReference Include="..\POS.Utilities\POS.Utilities.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Controllers\" />
   </ItemGroup>
 
 </Project>
